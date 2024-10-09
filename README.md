@@ -10,4 +10,4 @@ As an indie dev, monitoring the first few reviews and responding to bad ones is 
 `bad_review_url`: From your app Steam page -> Community hub -> Reviews -> Set filter: Most helpful (all time), Negative only -> copy URL
 
 ## Use
-Add a cron job `0 18 * * * /home/user/steam_review_notify.py`, this will check the reviews every day at 6 pm. As with every scraper, please do not abuse it, do not check the bad review count every milisecond, there is no need.
+Add a cron job `0 18 * * * env DISPLAY=:0.0 /usr/bin/python3 /home/user/steam_review_notify.py`, this will check the reviews every day at 6 pm. As with every scraper, please do not abuse it, do not check the bad review count every milisecond, there is no need.
